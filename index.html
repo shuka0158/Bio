@@ -367,6 +367,30 @@
       width: 420px;
       height: auto;
     }
+
+    /* ── SCROLL ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px) scale(0.97);
+      transition: opacity 0.55s cubic-bezier(.22,.68,0,1.2),
+                  transform 0.55s cubic-bezier(.22,.68,0,1.2);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .reveal-delay-1 { transition-delay: 0.07s; }
+    .reveal-delay-2 { transition-delay: 0.14s; }
+    .reveal-delay-3 { transition-delay: 0.21s; }
+    .reveal-delay-4 { transition-delay: 0.28s; }
+    .reveal-delay-5 { transition-delay: 0.35s; }
+    .reveal-delay-6 { transition-delay: 0.42s; }
+    .reveal-delay-7 { transition-delay: 0.49s; }
+    .reveal-delay-8 { transition-delay: 0.56s; }
+    .reveal-delay-9 { transition-delay: 0.63s; }
+    .reveal-delay-10 { transition-delay: 0.70s; }
   </style>
 </head>
 <body>
@@ -422,25 +446,25 @@
 <main class="container">
 
   <!-- SKILLS -->
-  <h2 class="section-title">Technologies</h2>
+  <h2 class="section-title reveal">Technologies</h2>
   <div class="skills">
-    <span class="skill-tag"><span class="dot" style="background:#555"></span>C / C++</span>
-    <span class="skill-tag"><span class="dot" style="background:#f1e05a"></span>JavaScript</span>
-    <span class="skill-tag"><span class="dot" style="background:#3178c6"></span>TypeScript</span>
-    <span class="skill-tag"><span class="dot" style="background:#e34c26"></span>HTML</span>
-    <span class="skill-tag"><span class="dot" style="background:#563d7c"></span>CSS</span>
-    <span class="skill-tag"><span class="dot" style="background:#89e051"></span>Bash / Shell</span>
-    <span class="skill-tag"><span class="dot" style="background:#ff6900"></span>Firebase</span>
-    <span class="skill-tag"><span class="dot" style="background:#00d4aa"></span>Next.js</span>
-    <span class="skill-tag"><span class="dot" style="background:#6c63ff"></span>Flipper Zero / RF</span>
-    <span class="skill-tag"><span class="dot" style="background:#d4a017"></span>Claude Code (AI)</span>
+    <span class="skill-tag reveal reveal-delay-1"><span class="dot" style="background:#555"></span>C / C++</span>
+    <span class="skill-tag reveal reveal-delay-2"><span class="dot" style="background:#f1e05a"></span>JavaScript</span>
+    <span class="skill-tag reveal reveal-delay-3"><span class="dot" style="background:#3178c6"></span>TypeScript</span>
+    <span class="skill-tag reveal reveal-delay-4"><span class="dot" style="background:#e34c26"></span>HTML</span>
+    <span class="skill-tag reveal reveal-delay-5"><span class="dot" style="background:#563d7c"></span>CSS</span>
+    <span class="skill-tag reveal reveal-delay-6"><span class="dot" style="background:#89e051"></span>Bash / Shell</span>
+    <span class="skill-tag reveal reveal-delay-7"><span class="dot" style="background:#ff6900"></span>Firebase</span>
+    <span class="skill-tag reveal reveal-delay-8"><span class="dot" style="background:#00d4aa"></span>Next.js</span>
+    <span class="skill-tag reveal reveal-delay-9"><span class="dot" style="background:#6c63ff"></span>Flipper Zero / RF</span>
+    <span class="skill-tag reveal reveal-delay-10"><span class="dot" style="background:#d4a017"></span>Claude Code (AI)</span>
   </div>
 
   <!-- PROJECTS -->
-  <h2 class="section-title">Projects</h2>
+  <h2 class="section-title reveal">Projects</h2>
   <div class="projects">
 
-    <a class="project-card" href="https://github.com/shuka0158/ARF-Shuka-Edition" target="_blank">
+    <a class="project-card reveal reveal-delay-1" href="https://github.com/shuka0158/ARF-Shuka-Edition" target="_blank">
       <div class="project-name">ARF-Shuka-Edition</div>
       <div class="project-desc">Custom Flipper Zero firmware combining ARF protocols with the Momentum UI. My most starred open source project.</div>
       <div class="project-meta">
@@ -449,7 +473,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shuka0158/Flipper-SubGHz-Tools" target="_blank">
+    <a class="project-card reveal reveal-delay-2" href="https://github.com/shuka0158/Flipper-SubGHz-Tools" target="_blank">
       <div class="project-name">Flipper-SubGHz-Tools</div>
       <div class="project-desc">Original SubGHz FAP apps for Flipper Zero — RF Tracker and RF Surgeon, built from scratch.</div>
       <div class="project-meta">
@@ -458,7 +482,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shuka0158/Nexus" target="_blank">
+    <a class="project-card reveal reveal-delay-3" href="https://github.com/shuka0158/Nexus" target="_blank">
       <div class="project-name">Nexus</div>
       <div class="project-desc">Futuristic productivity OS in the browser: calendar, tasks, habits, goals, notes, focus timer, AI agent, and Google Calendar sync.</div>
       <div class="project-meta">
@@ -467,7 +491,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shuka0158/Tbilisi-90s" target="_blank">
+    <a class="project-card reveal reveal-delay-4" href="https://github.com/shuka0158/Tbilisi-90s" target="_blank">
       <div class="project-name">Tbilisi-90s</div>
       <div class="project-desc">Multiplayer top-down crime sandbox browser game set in 1990s Tbilisi. Built in pure HTML/CSS/JS.</div>
       <div class="project-meta">
@@ -476,7 +500,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shuka0158/ShukaHub-Android-App" target="_blank">
+    <a class="project-card reveal reveal-delay-5" href="https://github.com/shuka0158/ShukaHub-Android-App" target="_blank">
       <div class="project-name">ShukaHub Android</div>
       <div class="project-desc">Free chat app I built myself, available on Android. Find me at @shuka0158 on ShukaHub.</div>
       <div class="project-meta">
@@ -485,7 +509,7 @@
       </div>
     </a>
 
-    <a class="project-card" href="https://github.com/shuka0158/TEMP-OS" target="_blank">
+    <a class="project-card reveal reveal-delay-6" href="https://github.com/shuka0158/TEMP-OS" target="_blank">
       <div class="project-name">TEMP-OS</div>
       <div class="project-desc">A browser-based basic operating system experiment with windowing and basic UI.</div>
       <div class="project-meta">
@@ -497,10 +521,10 @@
   </div>
 
   <!-- GALLERY -->
-  <h2 class="section-title">My Lab</h2>
+  <h2 class="section-title reveal">My Lab</h2>
   <div class="gallery">
 
-    <div class="gallery-item">
+    <div class="gallery-item reveal reveal-delay-1">
       <img src="1.jpeg" alt="Hardware collection">
       <div class="gallery-caption">
         <strong>Hardware Stash</strong>
@@ -508,15 +532,15 @@
       </div>
     </div>
 
-    <div class="gallery-item">
-      <img src="2.jpeg" alt="LilyGO T-Keyboard Meshtastic">
+    <div class="gallery-item reveal reveal-delay-2">
+      <img src="2.jpeg" alt="LilyGO T-Deck+ Meshtastic">
       <div class="gallery-caption">
         <strong>LilyGO T-Deck+</strong>
         Running Meshtastic Mesh Detector — off-grid mesh radio in a BlackBerry form factor.
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item reveal reveal-delay-3">
       <img src="3.jpeg" alt="Handheld radio">
       <div class="gallery-caption">
         <strong>Handheld Radio</strong>
@@ -524,7 +548,7 @@
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item reveal reveal-delay-4">
       <img src="4.jpeg" alt="Rooted Android Termux">
       <div class="gallery-caption">
         <strong>Rooted Android + Termux</strong>
@@ -532,7 +556,7 @@
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item reveal reveal-delay-5">
       <img src="5.jpg" alt="Tmux setup">
       <div class="gallery-caption">
         <strong>The Setup</strong>
@@ -540,7 +564,7 @@
       </div>
     </div>
 
-    <div class="gallery-item">
+    <div class="gallery-item reveal reveal-delay-6">
       <img src="6.jpg" alt="Flipper Zero orange case">
       <div class="gallery-caption">
         <strong>Flipper Zero</strong>
@@ -551,15 +575,15 @@
   </div>
 
   <!-- ABOUT -->
-  <h2 class="section-title">About</h2>
+  <h2 class="section-title reveal">About</h2>
   <div class="about-grid">
-    <div class="about-card">
+    <div class="about-card reveal reveal-delay-1">
       <h3>Who I am</h3>
       <p>
         I'm a self-taught developer from Georgia. I started from zero — learning HTML, CSS, and Bash — and have grown into building firmware for Flipper Zero, full-stack web apps, and multiplayer browser games. I actively use Claude Code as part of my development workflow across all my projects.
       </p>
     </div>
-    <div class="about-card">
+    <div class="about-card reveal reveal-delay-2">
       <h3>What I build</h3>
       <ul>
         <li>Flipper Zero firmware &amp; SubGHz tools</li>
@@ -569,7 +593,7 @@
         <li>Electronic DIY projects</li>
       </ul>
     </div>
-    <div class="about-card">
+    <div class="about-card reveal reveal-delay-3">
       <h3>Currently learning</h3>
       <ul>
         <li>C / embedded systems</li>
@@ -578,7 +602,7 @@
         <li>Advanced TypeScript</li>
       </ul>
     </div>
-    <div class="about-card">
+    <div class="about-card reveal reveal-delay-4">
       <h3>Find me</h3>
       <p>
         GitHub: <a href="https://github.com/shuka0158" target="_blank" style="color:var(--accent)">@shuka0158</a><br>
@@ -602,6 +626,19 @@
        src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3c2NHF1aGZvcnVlaWl6bTZweTR1aHRmZTB1ZTcycmE4NmpzZWw2cSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rhZr8u3cvxe0ksf1ej/giphy.gif"
        alt="">
 </div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
