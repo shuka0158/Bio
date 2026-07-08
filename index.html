@@ -350,10 +350,10 @@
 </section>
 
 <div class="stats-bar">
-  <div class="stat reveal"><div class="stat-num">13</div><div class="stat-label">Repos</div></div>
-  <div class="stat reveal"><div class="stat-num">6</div><div class="stat-label">Followers</div></div>
-  <div class="stat reveal"><div class="stat-num">8★</div><div class="stat-label">Top Stars</div></div>
-  <div class="stat reveal"><div class="stat-num">2023</div><div class="stat-label">On GitHub</div></div>
+  <div class="stat reveal"><div class="stat-num" id="stat-repos">16</div><div class="stat-label">Repos</div></div>
+  <div class="stat reveal"><div class="stat-num" id="stat-followers">8</div><div class="stat-label">Followers</div></div>
+  <div class="stat reveal"><div class="stat-num" id="stat-stars">13★</div><div class="stat-label">Top Stars</div></div>
+  <div class="stat reveal"><div class="stat-num" id="stat-year">2023</div><div class="stat-label">On GitHub</div></div>
 </div>
 
 <main class="container">
@@ -374,41 +374,41 @@
 
   <h2 class="section-title reveal">Projects</h2>
   <div class="projects">
-    <a class="project-card reveal" href="https://github.com/shuka0158/ARF-Shuka-Edition" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/ARF-Shuka-Edition" target="_blank" data-repo="ARF-Shuka-Edition">
       <div class="project-card-header">
         <div class="project-name">ARF-Shuka-Edition</div>
         <span class="badge badge-featured">★ Top</span>
       </div>
       <div class="project-desc">Custom Flipper Zero firmware combining ARF protocols with the Momentum UI. My most starred open source project.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#aaa"></span><span>C</span><span class="stars">★ 8</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#aaa"></span><span>C</span><span class="stars">★ 13</span></div>
     </a>
-    <a class="project-card reveal" href="https://github.com/shuka0158/Flipper-SubGHz-Tools" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/Flipper-SubGHz-Tools" target="_blank" data-repo="Flipper-SubGHz-Tools">
       <div class="project-name">Flipper-SubGHz-Tools</div>
       <div class="project-desc">Original SubGHz FAP apps for Flipper Zero — RF Tracker and RF Surgeon, built from scratch.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#aaa"></span><span>C</span><span class="stars">★ 2</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#aaa"></span><span>C</span><span class="stars">★ 3</span></div>
     </a>
-    <a class="project-card reveal" href="https://github.com/shuka0158/Nexus" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/Nexus" target="_blank" data-repo="Nexus">
       <div class="project-name">Nexus</div>
       <div class="project-desc">Futuristic productivity OS in the browser: calendar, tasks, habits, goals, notes, focus timer, AI agent, and Google Calendar sync.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#3178c6"></span><span>TypeScript</span><span class="stars">★ 1</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#3178c6"></span><span>TypeScript</span><span class="stars">★ 2</span></div>
     </a>
-    <a class="project-card reveal" href="https://github.com/shuka0158/Tbilisi-90s" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/Tbilisi-90s" target="_blank" data-repo="Tbilisi-90s">
       <div class="project-card-header">
         <div class="project-name">Tbilisi-90s</div>
         <span class="badge badge-active">Active</span>
       </div>
       <div class="project-desc">Multiplayer top-down crime sandbox browser game set in 1990s Tbilisi. Built in pure HTML/CSS/JS.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#e34c26"></span><span>HTML</span><span class="stars">★ 1</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#e34c26"></span><span>HTML</span><span class="stars">★ 2</span></div>
     </a>
-    <a class="project-card reveal" href="https://github.com/shuka0158/ShukaHub-Android-App" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/ShukaHub-Android-App" target="_blank" data-repo="ShukaHub-Android-App">
       <div class="project-name">ShukaHub Android</div>
       <div class="project-desc">Free chat app I built myself, available on Android. Find me at @shuka0158 on ShukaHub.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#b07219"></span><span>Java/Kotlin</span><span class="stars">★ 1</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#b07219"></span><span>Java/Kotlin</span><span class="stars">★ 2</span></div>
     </a>
-    <a class="project-card reveal" href="https://github.com/shuka0158/TEMP-OS" target="_blank">
+    <a class="project-card reveal" href="https://github.com/shuka0158/TEMP-OS" target="_blank" data-repo="TEMP-OS">
       <div class="project-name">TEMP-OS</div>
       <div class="project-desc">A browser-based basic operating system experiment with windowing and basic UI.</div>
-      <div class="project-meta"><span class="lang-dot" style="background:#e34c26"></span><span>HTML</span><span class="stars">★ 1</span></div>
+      <div class="project-meta"><span class="lang-dot" style="background:#e34c26"></span><span>HTML</span><span class="stars">★ 2</span></div>
     </a>
   </div>
 
@@ -523,6 +523,61 @@
     animate(wavePath, { strokeDashoffset: [0, -200] },
       { duration: 6, repeat: Infinity, easing: 'linear', strokeDasharray: 200 });
   }
+</script>
+
+<script>
+  // ---- Live GitHub stats hydration ----------------------------------------
+  // The numbers below are kept fresh by a GitHub Actions bot (data.json) and,
+  // as a bonus, refreshed straight from the GitHub API on load. If everything
+  // fails, the baked-in HTML values are shown. See scripts/build-data.mjs.
+  (function () {
+    const setText = (id, v) => { const el = document.getElementById(id); if (el && v != null) el.textContent = v; };
+
+    function applyStats(d) {
+      if (!d) return;
+      setText('stat-repos', d.public_repos);
+      setText('stat-followers', d.followers);
+      if (d.top_stars != null) setText('stat-stars', d.top_stars + '★');
+      setText('stat-year', d.joined_year);
+      const stars = d.stars || {};
+      document.querySelectorAll('.project-card[data-repo]').forEach((card) => {
+        const n = stars[card.getAttribute('data-repo')];
+        if (n == null) return;
+        const el = card.querySelector('.stars');
+        if (el) el.textContent = '★ ' + n;
+      });
+    }
+
+    // 1) Fast path: bot-maintained data.json (no rate limits, always available).
+    fetch('data.json?ts=' + Date.now())
+      .then((r) => (r.ok ? r.json() : null))
+      .then(applyStats)
+      .catch(() => {});
+
+    // 2) Best-effort live refresh from GitHub. May hit the unauthenticated
+    //    60/hr-per-IP limit — fails silently and leaves data.json values in place.
+    Promise.all([
+      fetch('https://api.github.com/users/shuka0158').then((r) => (r.ok ? r.json() : null)),
+      fetch('https://api.github.com/users/shuka0158/repos?per_page=100&type=owner').then((r) => (r.ok ? r.json() : null)),
+    ])
+      .then(([user, repos]) => {
+        if (!user || !Array.isArray(repos)) return;
+        const stars = {};
+        let top = 0;
+        repos.filter((r) => !r.fork && !r.archived).forEach((r) => {
+          stars[r.name] = r.stargazers_count;
+          if (r.stargazers_count > top) top = r.stargazers_count;
+        });
+        applyStats({
+          public_repos: user.public_repos,
+          followers: user.followers,
+          top_stars: top,
+          joined_year: new Date(user.created_at).getUTCFullYear(),
+          stars,
+        });
+      })
+      .catch(() => {});
+  })();
 </script>
 
 </body>
