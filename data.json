@@ -1,17 +1,19 @@
 {
-  "generated_at": "2026-08-22T01:41:40.281Z",
+  "generated_at": "2026-08-22T06:52:17.139Z",
   "login": "shuka0158",
   "public_repos": 15,
-  "followers": 8,
+  "followers": 9,
   "following": 12,
   "joined_year": 2023,
-  "top_stars": 25,
-  "total_stars": 58,
+  "top_stars": 26,
+  "total_stars": 62,
   "stars": {
+    "PRIVATE-UNLEASHED-2.0-FW-FOR-FLIPPER-ZERO": 12,
+    "Flipper-SubGHz-Tools": 5,
+    "Quantum3.0": 6,
+    "ARF-Shuka-Edition": 26,
     "Bio": 2,
-    "ARF-Shuka-Edition": 25,
     "FlipperPi": 2,
-    "Quantum3.0": 5,
     "game": 1,
     "ShukaHub-Linux-App": 1,
     "translator": 1,
@@ -20,8 +22,6 @@
     "ShukaHub-Android-App": 1,
     "Nexus": 1,
     "Simple-GPU-Stress-Test-For-Laptop.": 1,
-    "Flipper-SubGHz-Tools": 4,
-    "PRIVATE-UNLEASHED-2.0-FW-FOR-FLIPPER-ZERO": 11,
     "usb-sound-manager": 1
   }
 }
