@@ -1,27 +1,25 @@
 {
-  "generated_at": "2026-09-16T11:20:26.127Z",
+  "generated_at": "2026-09-16T16:40:44.057Z",
   "login": "shuka0158",
-  "public_repos": 15,
+  "public_repos": 13,
   "followers": 10,
   "following": 12,
   "joined_year": 2023,
   "top_stars": 28,
-  "total_stars": 56,
+  "total_stars": 53,
   "stars": {
-    "Bio": 2,
     "ARF-Shuka-Edition": 28,
+    "mcp-sentinel": 0,
+    "Bio": 2,
     "ytm-tui": 1,
     "fly-chess-brain": 0,
     "shuka0158": 0,
     "PRIVATE-UNLEASHED-2.0-FW-FOR-FLIPPER-ZERO": 11,
     "Flipper-SubGHz-Tools": 5,
     "FlipperPi": 2,
-    "ShukaHub-Linux-App": 1,
     "translator": 1,
     "TEMP-OS": 1,
     "ShukaHub-Android-App": 1,
-    "Nexus": 1,
-    "Simple-GPU-Stress-Test-For-Laptop.": 1,
     "usb-sound-manager": 1
   }
 }
