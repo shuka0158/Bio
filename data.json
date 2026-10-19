@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-19T12:52:17.528Z",
+  "generated_at": "2026-10-19T22:14:52.562Z",
   "login": "shuka0158",
   "public_repos": 13,
   "followers": 10,
@@ -8,9 +8,9 @@
   "top_stars": 32,
   "total_stars": 66,
   "stars": {
-    "mcp-sentinel": 0,
-    "Bio": 2,
     "ytm-tui": 8,
+    "Bio": 2,
+    "mcp-sentinel": 0,
     "ARF-Shuka-Edition": 32,
     "Flipper-SubGHz-Tools": 7,
     "PRIVATE-UNLEASHED-2.0-FW-FOR-FLIPPER-ZERO": 11,
