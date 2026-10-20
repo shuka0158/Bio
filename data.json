@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-10-20T16:45:58.383Z",
+  "generated_at": "2026-10-20T21:29:15.662Z",
   "login": "shuka0158",
   "public_repos": 13,
   "followers": 10,
-  "following": 12,
+  "following": 11,
   "joined_year": 2023,
   "top_stars": 32,
   "total_stars": 66,
   "stars": {
-    "Bio": 2,
     "ytm-tui": 8,
+    "Bio": 2,
     "mcp-sentinel": 0,
     "ARF-Shuka-Edition": 32,
     "Flipper-SubGHz-Tools": 7,
