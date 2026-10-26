@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T04:26:12.343Z",
+  "generated_at": "2026-10-26T12:44:08.406Z",
   "login": "shuka0158",
   "public_repos": 13,
   "followers": 10,
@@ -8,10 +8,10 @@
   "top_stars": 32,
   "total_stars": 68,
   "stars": {
+    "mcp-sentinel": 0,
     "Bio": 2,
     "Flipper-SubGHz-Tools": 8,
     "ytm-tui": 9,
-    "mcp-sentinel": 0,
     "ARF-Shuka-Edition": 32,
     "PRIVATE-UNLEASHED-2.0-FW-FOR-FLIPPER-ZERO": 11,
     "fly-chess-brain": 0,
