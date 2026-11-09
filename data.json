@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-09T05:56:45.969Z",
+  "generated_at": "2026-11-09T15:57:53.658Z",
   "login": "shuka0158",
   "public_repos": 15,
   "followers": 10,
@@ -8,11 +8,11 @@
   "top_stars": 33,
   "total_stars": 71,
   "stars": {
+    "mcp-sentinel": 0,
     "Bio": 2,
     "Ebanatrium-OSINT": 1,
     "ARF-Shuka-Edition": 33,
     "shuka0158": 0,
-    "mcp-sentinel": 0,
     "ytm-tui": 10,
     "ytm-tui-windows": 0,
     "Flipper-SubGHz-Tools": 8,
